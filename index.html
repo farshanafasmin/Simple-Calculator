@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <p>CASIO</p>
+        <!-- <form action="" id="input1"> -->
+            <input type="text" id="input">
+
+            <div class="buttons">
+                <div>
+                    <button onclick="display(7)" class="btn numbers" id="seven">7</button>
+                    <button onclick="display(8)" class="btn numbers" id="eight" >8</button>
+                    <button onclick="display(9)" class="btn numbers" id="nine" >9</button>
+                    <button onclick="display('/')" class="btn operator" id="divide">/</button>
+                </div>
+
+                <div>
+                    <button onclick="display(4)" class="btn numbers" id="four" >4</button>
+                    <button onclick="display(5)" class="btn numbers" id="five" >5</button>
+                    <button onclick="display(6)" class="btn numbers" id="six" >6</button>
+                    <button onclick="display('*')" class="btn operator" id="multiply" >*</button>
+                </div>
+
+                <div>
+                    <button onclick="display(1)" class="btn numbers" id="one" >1</button>
+                    <button onclick="display(2)" class="btn numbers" id="two" >2</button>
+                    <button onclick="display(3)" class="btn numbers" id="three" >3</button>
+                    <button onclick="display('-')" class="btn operator" id="minus" >-</button>
+                </div>
+
+                <div>
+                    <button onclick="display('00')" class="btn numbers" id="zero zero">00</button>
+                    <button onclick="display(0)" class="btn numbers" id="zero">0</button>
+                    <button onclick="display('.')" class="btn numbers" id="dot">.</button>
+                    <button onclick="display('+')" class="btn operator" id="plus" >+</button>
+                </div>
+
+                <div>
+                    <button onclick="clearAll()" class="btn clear" id="clear" style="font-size: 17px;" >C</button>
+                    <button onclick="removeLast()" class="btn clear" id="delete" style="font-size: 17px;">DEL</button>
+                    <button onclick="evaluateExp()" class="btn result" id="equals" >=</button>
+                    <button onclick="display('%')" class="btn operator" id="percentage">%</button>
+                </div>
+
+            </div>
+        <!-- </form> -->
+    </div>
+
+
+</body>
+<script src="./main.js"></script>
+
+</html>
